@@ -13,6 +13,8 @@
 		1EAE4005266B69B700513993 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EAE4003266B69B700513993 /* Main.storyboard */; };
 		1EAE4007266B69C700513993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EAE4006266B69C700513993 /* Assets.xcassets */; };
 		1EAE400A266B69C700513993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EAE4008266B69C700513993 /* LaunchScreen.storyboard */; };
+		1EAE4012266B88A200513993 /* LoginChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAE4011266B88A200513993 /* LoginChecker.swift */; };
+		1EAE4014266B969500513993 /* LoginCheckerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EAE4013266B969500513993 /* LoginCheckerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1EAE4006266B69C700513993 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EAE4009266B69C700513993 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EAE400B266B69C700513993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EAE4011266B88A200513993 /* LoginChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginChecker.swift; sourceTree = "<group>"; };
+		1EAE4013266B969500513993 /* LoginCheckerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCheckerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		1EAE3FFC266B69B700513993 /* LoginChecker */ = {
 			isa = PBXGroup;
 			children = (
-				1EAE3FFD266B69B700513993 /* AppDelegate.swift */,
-				1EAE3FFF266B69B700513993 /* SceneDelegate.swift */,
+				1EAE4015266B985400513993 /* SupportingFiles */,
 				1EAE4001266B69B700513993 /* ViewController.swift */,
 				1EAE4003266B69B700513993 /* Main.storyboard */,
-				1EAE4006266B69C700513993 /* Assets.xcassets */,
 				1EAE4008266B69C700513993 /* LaunchScreen.storyboard */,
 				1EAE400B266B69C700513993 /* Info.plist */,
 			);
 			path = LoginChecker;
+			sourceTree = "<group>";
+		};
+		1EAE4015266B985400513993 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1EAE3FFD266B69B700513993 /* AppDelegate.swift */,
+				1EAE3FFF266B69B700513993 /* SceneDelegate.swift */,
+				1EAE4011266B88A200513993 /* LoginChecker.swift */,
+				1EAE4013266B969500513993 /* LoginCheckerDelegate.swift */,
+				1EAE4006266B69C700513993 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +155,8 @@
 				1EAE4002266B69B700513993 /* ViewController.swift in Sources */,
 				1EAE3FFE266B69B700513993 /* AppDelegate.swift in Sources */,
 				1EAE4000266B69B700513993 /* SceneDelegate.swift in Sources */,
+				1EAE4012266B88A200513993 /* LoginChecker.swift in Sources */,
+				1EAE4014266B969500513993 /* LoginCheckerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +309,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gwg.LoginChecker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gwg.LoginChecker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
