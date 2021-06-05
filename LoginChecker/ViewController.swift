@@ -13,6 +13,9 @@ class ViewController: UIViewController {
     
     private var login = ""
     
+    // Переменная для Unit-тестирования
+    var testMessage = ""
+    
     let loginChecker = LoginChecker()
     
     override func viewDidLoad() {
@@ -37,6 +40,9 @@ extension ViewController: UITextFieldDelegate {
 
 extension ViewController: LoginCheckerDelegate {
     func showAlert(with messsage: String) {
+        // присвоение значения для Unit-тестирования
+        testMessage = messsage
+        
         let ac = UIAlertController(title: nil, message: messsage, preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(ac, animated: true)
